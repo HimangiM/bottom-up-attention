@@ -11,8 +11,9 @@ from collections import Counter, defaultdict
 import xml.etree.cElementTree as ET
 from xml.dom import minidom
 
-
-dataDir = './data/vg'
+# give the full path, . creates confusion since symlink vg is in data and
+# this code is in data/genome
+dataDir = '/home/himangi/bottom-up-attention/data/vg'
 outDir = 'data/genome'
 
 # Set maximum values for number of object / attribute / relation classes,
